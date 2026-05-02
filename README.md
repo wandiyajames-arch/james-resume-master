@@ -21,7 +21,7 @@ This repository contains a customized, responsive web portfolio designed to show
 
 ## Author
 **James Wandiya**
-* *MSc Researcher (Big Data & Data Science) at AIMS Senegal*
+* *MSc Big Data & Data Science at AIMS Senegal*
 * [LinkedIn](https://www.linkedin.com/in/james-wandiya-87b90912a)
 * [GitHub](https://github.com/wandiyajames-arch)
 * [Twitter](https://twitter.com/WandiyaJames)
