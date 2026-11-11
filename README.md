@@ -1,27 +1,37 @@
-# Interactive Data Science & Developer Portfolio
+# Wandiya James | Data Science & AI Portfolio
 
-Welcome to the source code for my professional portfolio! 
+Welcome to the source code for my professional portfolio!
 
 🌐 **Live Website:** [View my deployed portfolio here](https://wandiyajames-arch.github.io/james-resume-master/)
 
 ## About This Project
-This repository contains a customized, responsive web portfolio designed to showcase my background, skills, and projects as a Data Scientist and Frontend Developer. I customized a base HTML/CSS Bootstrap template and heavily modified the structure, styling, and layout to match my professional identity.
+This repository contains my responsive web portfolio. It showcases my research, projects and experience as a data scientist and AI researcher, from forecasting food insecurity in Nigeria to building trustworthy LLM agents. I started from a Bootstrap template and heavily customized the structure, styling and layout to match my professional identity.
+
+## What's on the Site
+* **Research & Projects:** NaijaFoodWatch (my MSc thesis on food insecurity forecasting), Trustworthy Agentic AI, an AI maths tutor that abstains instead of guessing, the Business Language Layer, a Wolof AI assistant, and more.
+* **Publications & Presentations:** Papers accepted for oral and poster presentation in 2026.
+* **Experience & Education:** MSc at AIMS Senegal, my DataLab Technology internship, university tutoring and frontend development.
+* **Leadership & Volunteering:** Data Science Learning Hub, CDYA, DLCF and NACOSS.
 
 ## Key Customizations
-* **Theming & Styling:** Implemented a modern "Deep Tech Midnight" color palette using deep indigo and slate navy to align with modern tech industry design standards.
-* **Structural Layout Enhancements:** Reorganized the HTML structure using Bootstrap 5 grid utilities. Upgraded flat lists into clean, card-based layouts for the "Featured Projects," "Experience," and "Skills" sections.
-* **Advanced Visual Effects:** Added custom CSS animations, including a "sparkle and shine" sweeping hover effect with layered glowing shadows on the social links, and a glassmorphism aesthetic for the sidebar navigation.
-* **Image Optimization:** Utilized CSS Flexbox alongside `object-fit: cover` and `object-position` properties to perfectly frame and center my profile picture within a circular container, preventing any distortion.
+* **Theming & Styling:** A modern "Deep Tech Midnight" colour palette of deep indigo and slate navy.
+* **Card-Based Layout:** Bootstrap 5 grid utilities turn flat lists into clean cards for projects, experience and skills.
+* **Visual Effects:** Custom CSS animations, including a sweeping "sparkle and shine" hover effect on the social links and a glassmorphism sidebar.
+* **Image Framing:** Flexbox with `object-fit: cover` and `object-position` keeps the profile picture centred in its circular frame without distortion.
 
 ## Technologies Used
 * **HTML5:** Semantic structure and layout.
-* **CSS3:** Custom animations, Flexbox layout, and image framing.
-* **Bootstrap 5:** Grid system, responsive design, and utility classes.
-* **JavaScript:** Smooth scrolling and mobile navigation toggles.
+* **CSS3:** Custom animations, Flexbox layout and image framing.
+* **Bootstrap 5:** Grid system, responsive design and utility classes.
+* **JavaScript:** Mobile navigation toggle.
+* **GitHub Actions:** Automatic deployment to GitHub Pages.
 
 ## Author
-**James Wandiya**
-* *MSc Big Data & Data Science at AIMS Senegal*
+**Wandiya James**
+* *MSc Big Data & Data Science (fully funded), AIMS Senegal, 2025 to 2027*
+* Live project: [NaijaFoodWatch](https://naija-foodwatch-001.streamlit.app/)
 * [LinkedIn](https://www.linkedin.com/in/james-wandiya-87b90912a)
 * [GitHub](https://github.com/wandiyajames-arch)
-* [Twitter](https://twitter.com/WandiyaJames)
+* [Hugging Face](https://huggingface.co/wandiya39)
+* [ORCID](https://orcid.org/0009-0002-4744-5640)
+* [X (Twitter)](https://x.com/WandiyaJames)
