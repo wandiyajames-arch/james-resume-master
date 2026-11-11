@@ -64,3 +64,61 @@ section.resume-section .resume-section-content { max-width: 68rem; margin: 0 aut
   section.resume-section { padding-top: 3rem; padding-bottom: 3rem; }
   #about.resume-section { min-height: auto; padding-top: 4rem; }
 }
+
+/* ==========================================================================
+   HERO (About) — two-column layout with an "At a glance" card
+   ========================================================================== */
+#about.hero {
+  min-height: 100vh;
+  display: flex; align-items: center;
+  background:
+    radial-gradient(circle at 85% 15%, rgba(var(--bs-primary-rgb), .10), transparent 40%),
+    radial-gradient(circle at 10% 90%, rgba(var(--bs-primary-rgb), .06), transparent 35%),
+    radial-gradient(rgba(15,23,42,.06) 1px, transparent 1px) 0 0 / 22px 22px,
+    #ffffff !important;
+}
+#about .resume-section-content { max-width: 76rem; }
+.eyebrow { display: inline-flex; align-items: center; gap: .5rem; padding: .4rem .9rem; margin-bottom: 1.2rem;
+  border-radius: 999px; background: rgba(var(--bs-primary-rgb), .1); color: var(--accent-dark);
+  font-weight: 600; font-size: .85rem; letter-spacing: .04em; }
+.eyebrow .dot { width: .5rem; height: .5rem; border-radius: 50%; background: var(--accent); box-shadow: 0 0 0 4px rgba(var(--bs-primary-rgb), .2); }
+.hero-lead { font-size: 1.25rem; line-height: 1.7; color: var(--text); max-width: 38rem; margin-bottom: 1.5rem; }
+.hero-contact { display: flex; flex-wrap: wrap; gap: .6rem 1.4rem; margin-bottom: 2rem; color: var(--text); font-size: .95rem; }
+.hero-contact li { display: flex; align-items: center; gap: .5rem; }
+.hero-contact i { color: var(--accent); }
+.hero-contact a { color: var(--ink); text-decoration: none; font-weight: 500; }
+.hero-contact a:hover { color: var(--accent); }
+.btn-outline-dark { --bs-btn-color: var(--ink); --bs-btn-border-color: #cbd5e1; --bs-btn-hover-bg: var(--ink); --bs-btn-hover-border-color: var(--ink); --bs-btn-hover-color: #fff; }
+.btn-lg { font-size: 1rem; padding-top: .75rem; padding-bottom: .75rem; font-weight: 600; }
+#about .social-icons .social-icon { width: 2.8rem; height: 2.8rem; font-size: 1.1rem; margin-right: 0; }
+
+.glance-card { background: #fff; border: 1px solid #e5e7eb; border-radius: 1.25rem; padding: 2rem;
+  box-shadow: 0 20px 50px rgba(15,23,42,.08); position: relative; overflow: hidden; }
+.glance-card::before { content: ""; position: absolute; inset: 0 0 auto 0; height: 5px; background: linear-gradient(90deg, var(--accent), var(--side)); }
+.glance-title { font-family: 'Poppins', sans-serif; font-weight: 700; color: var(--ink); font-size: 1.1rem; margin-bottom: 1.2rem; }
+.stats { display: grid; grid-template-columns: 1fr 1fr; gap: .9rem; margin-bottom: 1.5rem; }
+.stats > div { background: var(--page); border-radius: .9rem; padding: .9rem 1rem; }
+.stats .num { display: block; font-family: 'Poppins', sans-serif; font-weight: 800; font-size: 1.7rem; color: var(--accent); line-height: 1.1; }
+.stats .lbl { font-size: .82rem; color: var(--text); line-height: 1.3; }
+.glance-list li { display: flex; gap: .85rem; padding: .7rem 0; border-top: 1px solid #eef0f3; }
+.glance-list i { color: var(--accent); margin-top: .25rem; width: 1rem; text-align: center; }
+.glance-list strong { display: block; color: var(--ink); font-size: .9rem; }
+.glance-list span { font-size: .9rem; color: var(--text); }
+.glance-link { display: inline-block; margin-top: 1rem; font-weight: 600; color: var(--accent); text-decoration: none; }
+.glance-link:hover { color: var(--accent-dark); }
+
+/* Tighter, consistent spacing for the other sections */
+section.resume-section:not(#about) { padding-top: 5rem; padding-bottom: 5rem; }
+section.resume-section:not(#about) .resume-section-content { max-width: 76rem; }
+hr.m-0 { display: none; }
+#projects, #experience, #skills, #awards { background: var(--page) !important; }
+
+@media (max-width: 1199.98px) {
+  #about.hero { min-height: auto; padding-top: 5rem; padding-bottom: 4rem; }
+}
+@media (max-width: 575.98px) {
+  .hero-lead { font-size: 1.1rem; }
+  .glance-card { padding: 1.4rem; }
+  .stats .num { font-size: 1.4rem; }
+}
+@media (max-width: 767.98px) { #about .row { --bs-gutter-x: 1rem; } }
