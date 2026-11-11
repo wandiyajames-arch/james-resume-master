@@ -1,0 +1,66 @@
+/* ==========================================================================
+   THEME OVERRIDES — loaded after styles.css
+   Change the colours in :root to restyle the whole site.
+   ========================================================================== */
+:root {
+  --side: #111827;          /* sidebar */
+  --side-2: #1f2937;       /* sidebar gradient end */
+  --accent: #059669;      /* links, badges, buttons */
+  --accent-dark: #047857;  /* hover */
+  --ink: #0f172a;        /* headings */
+  --text: #475569;       /* body text */
+  --page: #f6f7f9;       /* light section background */
+  --bs-primary: #059669;
+  --bs-primary-rgb: 5, 150, 105;
+  --bs-link-color: #059669;
+  --bs-link-hover-color: #047857;
+}
+
+/* Fonts: Poppins headings, Inter body, no shouty capitals */
+body { font-family: 'Inter', system-ui, sans-serif; color: var(--text); background: var(--page); }
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .subheading {
+  font-family: 'Poppins', 'Inter', sans-serif;
+  text-transform: none;
+  color: var(--ink);
+}
+h1.display-2 { font-weight: 800; letter-spacing: -0.02em; font-size: clamp(2.6rem, 6vw, 4.5rem); }
+h2 { font-size: clamp(1.8rem, 3vw, 2.4rem); font-weight: 700; position: relative; padding-bottom: .6rem; }
+h2::after { content: ""; position: absolute; left: 0; bottom: 0; width: 3rem; height: 4px; border-radius: 4px; background: var(--accent); }
+.subheading { font-size: 1.05rem; font-weight: 500; }
+#about .subheading { font-family: 'Inter', sans-serif; line-height: 1.9; }
+
+/* Full-width sections that fill the screen; content stays a readable width */
+section.resume-section { max-width: none; min-height: auto; padding-top: 4.5rem; padding-bottom: 4.5rem; }
+section.resume-section .resume-section-content { max-width: 68rem; margin: 0 auto; }
+#about.resume-section { min-height: 100vh; }
+@media (min-width: 992px) { section.resume-section { padding-left: 4rem; padding-right: 4rem; } }
+
+/* Sidebar */
+#sideNav.bg-primary { background: linear-gradient(180deg, var(--side) 0%, var(--side-2) 100%) !important; }
+#sideNav .navbar-nav .nav-item .nav-link { color: rgba(255,255,255,.72); font-weight: 600; font-size: .85rem; letter-spacing: .08em; }
+#sideNav .navbar-nav .nav-item .nav-link:hover,
+#sideNav .navbar-nav .nav-item .nav-link.active { color: #fff; background: rgba(255,255,255,.1); }
+#sideNav .img-profile { border-color: rgba(255,255,255,.85) !important; }
+
+/* Buttons, badges and accents */
+.btn-primary { --bs-btn-color: #fff; --bs-btn-bg: var(--accent); --bs-btn-border-color: var(--accent);
+  --bs-btn-hover-color: #fff; --bs-btn-hover-bg: var(--accent-dark); --bs-btn-hover-border-color: var(--accent-dark);
+  --bs-btn-active-bg: var(--accent-dark); }
+.badge.bg-primary:not(.bg-opacity-10) { background: var(--accent) !important; font-weight: 500; }
+.timeline.border-primary { border-color: rgba(var(--bs-primary-rgb), .35) !important; }
+
+/* Cards: soft lift on hover */
+.card { border: 1px solid #e8ebef !important; box-shadow: 0 1px 2px rgba(15,23,42,.04) !important; transition: transform .25s ease, box-shadow .25s ease; }
+.project-card:hover { transform: translateY(-4px); box-shadow: 0 12px 28px rgba(15,23,42,.10) !important; }
+.project-card { border-top: 4px solid var(--accent) !important; }
+
+/* Social icons */
+.social-icons .social-icon { background: #fff !important; color: var(--ink) !important; }
+.social-icons .social-icon:hover { background: var(--accent) !important; color: #fff !important; border-color: var(--accent) !important;
+  box-shadow: 0 8px 20px rgba(var(--bs-primary-rgb), .35) !important; }
+
+/* Phones */
+@media (max-width: 991.98px) {
+  section.resume-section { padding-top: 3rem; padding-bottom: 3rem; }
+  #about.resume-section { min-height: auto; padding-top: 4rem; }
+}
