@@ -19,7 +19,7 @@
 
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="styles.css" rel="stylesheet" />
-        <link href="theme.css" rel="stylesheet" />
+        <link href="theme.css?v=2" rel="stylesheet" />
     </head>
     <body id="page-top" class="bg-light">
 
@@ -84,7 +84,7 @@
                                 <div class="glance-title">At a glance</div>
                                 <div class="stats">
                                     <div><span class="num">2</span><span class="lbl">papers accepted for oral presentation</span></div>
-                                    <div><span class="num">8</span><span class="lbl">AI &amp; data projects</span></div>
+                                    <div><span class="num">9</span><span class="lbl">AI &amp; data projects</span></div>
                                     <div><span class="num">4 yrs</span><span class="lbl">university teaching</span></div>
                                     <div><span class="num">1st</span><span class="lbl">Class BSc, Computer Science</span></div>
                                 </div>
@@ -188,14 +188,15 @@
                             <div class="card h-100 border-0 shadow-sm rounded-4 overflow-hidden project-card">
                                 <div class="card-body p-4">
                                     <div class="d-flex justify-content-between align-items-center mb-3">
-                                        <h4 class="card-title fw-bold mb-0">Fake News Detection</h4>
+                                        <h4 class="card-title fw-bold mb-0">Digital Content Verification</h4>
                                         <i class="fas fa-newspaper text-primary fs-3"></i>
                                     </div>
                                     
-                                    <p class="card-text text-secondary">Team project comparing TF-IDF with logistic regression, an LSTM and a fine-tuned DistilBERT for detecting fake news.</p>
+                                    <p class="card-text text-secondary">A fake news detection app. Our team compared TF-IDF with logistic regression, an LSTM and a fine-tuned DistilBERT, and deployed the model on Hugging Face Spaces so anyone can check a piece of text.</p>
                                     <div class="d-flex flex-wrap gap-2 mt-3">
                                         <span class="badge bg-dark bg-opacity-10 text-dark px-3 py-2 rounded-pill">NLP</span> <span class="badge bg-dark bg-opacity-10 text-dark px-3 py-2 rounded-pill">DistilBERT</span> <span class="badge bg-dark bg-opacity-10 text-dark px-3 py-2 rounded-pill">LSTM</span>
                                     </div>
+                                    <a href="https://huggingface.co/spaces/wandiya39/Digital-Content-Verification" target="_blank" rel="noopener" class="btn btn-sm btn-primary rounded-pill mt-3 px-3 me-2">Live demo <i class="fas fa-arrow-up-right-from-square ms-1"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -218,13 +219,28 @@
                             <div class="card h-100 border-0 shadow-sm rounded-4 overflow-hidden project-card">
                                 <div class="card-body p-4">
                                     <div class="d-flex justify-content-between align-items-center mb-3">
-                                        <h4 class="card-title fw-bold mb-0">Traffic Object Tracking</h4>
+                                        <h4 class="card-title fw-bold mb-0">AIMS Traffic Monitor</h4>
                                         <i class="fas fa-video text-primary fs-3"></i>
                                     </div>
                                     
-                                    <p class="card-text text-secondary">A real-time computer vision system and web dashboard for detecting, tracking and counting road-traffic objects across multiple scenes to support urban mobility planning in Senegal.</p>
+                                    <p class="card-text text-secondary">A Django web app for urban mobility planning in Senegal: upload traffic footage and it detects and tracks vehicles with YOLO and OpenCV, then shows traffic-flow results on a multi-scene dashboard. Containerised with Docker and deployed on Hugging Face Spaces.</p>
                                     <div class="d-flex flex-wrap gap-2 mt-3">
-                                        <span class="badge bg-dark bg-opacity-10 text-dark px-3 py-2 rounded-pill">Computer Vision</span> <span class="badge bg-dark bg-opacity-10 text-dark px-3 py-2 rounded-pill">YOLO</span> <span class="badge bg-dark bg-opacity-10 text-dark px-3 py-2 rounded-pill">Deep SORT</span>
+                                        <span class="badge bg-dark bg-opacity-10 text-dark px-3 py-2 rounded-pill">YOLO</span> <span class="badge bg-dark bg-opacity-10 text-dark px-3 py-2 rounded-pill">OpenCV</span> <span class="badge bg-dark bg-opacity-10 text-dark px-3 py-2 rounded-pill">Django</span> <span class="badge bg-dark bg-opacity-10 text-dark px-3 py-2 rounded-pill">Docker</span>
+                                    </div>
+                                    <a href="https://wandiya39-aims-traffic-monitor.hf.space/" target="_blank" rel="noopener" class="btn btn-sm btn-primary rounded-pill mt-3 px-3 me-2">Live demo <i class="fas fa-arrow-up-right-from-square ms-1"></i></a><a href="https://github.com/wandiyajames-arch/AIMS-Traffic-Monitor" target="_blank" rel="noopener" class="btn btn-sm btn-outline-dark rounded-pill mt-3 px-3 me-2">Code <i class="fab fa-github ms-1"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="card h-100 border-0 shadow-sm rounded-4 overflow-hidden project-card">
+                                <div class="card-body p-4">
+                                    <div class="d-flex justify-content-between align-items-center mb-3">
+                                        <h4 class="card-title fw-bold mb-0">Intel Image Classifier</h4>
+                                        <i class="fas fa-mountain-sun text-primary fs-3"></i>
+                                    </div>
+                                    <p class="card-text text-secondary">A CNN that classifies natural-scene images (buildings, forest, glacier, mountain, sea, street) from the 25,000-image Intel dataset, built in both PyTorch and TensorFlow with an optional ResNet-50 transfer-learning backbone, and served through a Flask REST API.</p>
+                                    <div class="d-flex flex-wrap gap-2 mt-3">
+                                        <span class="badge bg-dark bg-opacity-10 text-dark px-3 py-2 rounded-pill">CNN</span> <span class="badge bg-dark bg-opacity-10 text-dark px-3 py-2 rounded-pill">PyTorch</span> <span class="badge bg-dark bg-opacity-10 text-dark px-3 py-2 rounded-pill">TensorFlow</span> <span class="badge bg-dark bg-opacity-10 text-dark px-3 py-2 rounded-pill">Flask</span>
                                     </div>
                                 </div>
                             </div>
